@@ -10,10 +10,10 @@ class TestMobile(Page):
         # Default value
         self.participant.vars['MobilePhones'] = False
         # The default is changed if the player is mobile
-        for substring in ['Mobi', 'Android']:
-            if substring in user_agent:
-                self.participant.vars['MobilePhones'] = True
-        return self.participant.vars['MobilePhones']
+        #for substring in ['Mobi', 'Android']:
+        #    if substring in user_agent:
+        #        self.participant.vars['MobilePhones'] = True
+        #return self.participant.vars['MobilePhones']
 
 
 class Results(Page):
